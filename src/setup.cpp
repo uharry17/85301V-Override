@@ -4,12 +4,12 @@
 pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
 // Drivetrain
-pros::MotorGroup left_blue_motors({8, 9}, pros::MotorGearset::blue);
+pros::MotorGroup left_blue_motors({-8, -9}, pros::MotorGearset::blue);
 pros::MotorGroup right_blue_motors({2, 3}, pros::MotorGearset::blue);
-pros::Motor left_green_motor(10, pros::MotorGearset::green);
+pros::Motor left_green_motor(-10, pros::MotorGearset::green);
 pros::Motor right_green_motor(1, pros::MotorGearset::green);
 
-pros::MotorGroup leftMotors({8, 9, 10});
+pros::MotorGroup leftMotors({-8, -9, -10});
 pros::MotorGroup rightMotors({2, 3, 1});
 
 // Inertial
